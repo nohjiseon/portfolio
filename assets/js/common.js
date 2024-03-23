@@ -43,11 +43,10 @@ function tab() {
   $(".tab_menu li").on("click",function(){
     let customType = $(this).data("filter");
     content.hide();
-    $(".tab_list li").removeClass("active");
+    $(".tab_menu li").removeClass("active");
       content.filter(function(){
-      return $(this).data("type") === customType;
-    })
-    .show();
+        return $(this).data("type") === customType;
+      }).show();
     $(this).addClass("active");
   });
 

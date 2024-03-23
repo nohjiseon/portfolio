@@ -106,16 +106,17 @@ header ul li a:hover { background: url(../images/hover.png) no-repeat center; co
 .visual { position: relative; height: 80rem; display: flex; align-items: center; } 
 .visual_box { display: flex; width: 100%; justify-content: center; align-items: flex-end; color: #272727; } 
 .visual_box > div { flex-grow: 1; width: 60%; text-align: right; padding-bottom: 3rem; } 
-.visual_box p { font-size: 4.5rem; } 
-.visual_box em { display: block; font-size: 8rem; } 
+.visual_box em { font-size: 4.5rem; } 
+.visual_box span { display: block; font-size: 8rem; } 
+.visual_box p { font-size: 1.7rem; color: #727272; padding-bottom: 1rem; } 
 .visual_box img { display: block; width: 40%; max-width: 55rem; } 
 
-.visual_back i { width: 4rem; height: 4rem; position: absolute; left: 50%; background: url(../images/ico_arrow.png) no-repeat center; animation: ani2 infinite 2.5s both; } 
+.visual_back i { width: 4rem; height: 4rem; position: absolute; left: 50%; transform: translateX(-50%); background: url(../images/ico_arrow.png) no-repeat center / contain; animation: ani2 infinite 2.5s both; } 
 .visual_back span { position: absolute; z-index: -1; } 
 .visual_back span ~ span { opacity: 0; animation: ani1 1 1s both; } 
-.visual_back .v_01 { width: 19rem; height: 19rem; left: 0; top: 55%; background: url(../images/v_01.png) no-repeat center / contain; animation: rotate 6s linear infinite; } 
+.visual_back .v_01 { width: 19rem; height: 19rem; left: 0; top: 51%; background: url(../images/v_01.png) no-repeat center / contain; animation: rotate 6s linear infinite; } 
 .visual_back .v_02 { width: 6rem; height: 6rem; left: 17%; top: 18%; background-color: #ffc845; border-radius: 100%; animation-delay: 0.4s; } 
-.visual_back .v_03 { width: 16.5rem; height: 16.5rem; left: 32.4%; top: 36%; background: url(../images/v_03.png) no-repeat center / contain; animation-delay: 0.8s; } 
+.visual_back .v_03 { width: 16.5rem; height: 16.5rem; left: 32.4%; top: 32%; background: url(../images/v_03.png) no-repeat center / contain; animation-delay: 0.8s; } 
 .visual_back .v_04 { width: 12rem; height: 12rem; right: 3%; top: 10%; border: 1.6rem solid #ffc845; border-radius: 100%; animation-delay: 1.2s; } 
 
 @keyframes ani1 { 
@@ -150,8 +151,9 @@ header ul li a:hover { background: url(../images/hover.png) no-repeat center; co
 .aboutme.ani3 h2 em:nth-child(6) { animation-delay: 0.5s; } 
 .aboutme.ani3 h2 em:nth-child(7) { animation-delay: 0.6s; } 
 
-.info_box h3 { margin: 5rem 0 1.5rem; padding-bottom: 8px; font-size: 2.5rem; color: #000; border-bottom: 1px solid #ccc; } 
-.info_box li { padding-bottom: 2rem; line-height: 2.8rem; } 
+.info_box h3 { margin: 5rem 0 1.5rem; padding-bottom: 1rem; font-size: 2.5rem; color: #000; border-bottom: 1px solid #ccc; } 
+.info_box li { padding-bottom: 1.5rem; line-height: 2.8rem; } 
+.info_box li.under { border-bottom: 1px solid #e7e7e7; margin-bottom: 1.5rem; }
 .info_box strong { display: inline-block; width: 26rem; color: #727272; } 
 .info_box p { font-size: 1.2rem; columns: #727272; } 
 .profile_top { display: flex; justify-content: center; align-items: flex-start; } 
@@ -173,6 +175,8 @@ header ul li a:hover { background: url(../images/hover.png) no-repeat center; co
 .tab_menu { display: flex; justify-content: center; align-items: center; padding: 5rem 0; flex-wrap: wrap; } 
 .tab_menu li ~ li { margin-left: 1.2rem; } 
 .tab_menu button { padding: 0.5rem 1.2rem; font-size: 2rem; background-color: rgba(162, 217, 231, 0.7); border: 1px solid #fff; border-radius: 0.4rem; font-weight: 300; margin-bottom: 1.2rem; } 
+.tab_menu li:hover button,
+.tab_menu li.active button { background-color: #fff; color: #a2d9e7; transition: 0.3s; }
 
 .tab_pannel { display: flex; align-items: stretch; gap: 2.4rem; flex-wrap: wrap; } 
 .tab_pannel li { position: relative; width: calc(100% / 3 - 1.6rem); background-color: #fff; border-radius: 0.4rem; margin-bottom: 3rem; border: 1px solid transparent; transition: all 0.4s; } 
@@ -201,23 +205,23 @@ footer .top { width: 5rem; height: 5rem; background: url(../images/top.png) no-r
 
 
 @media (max-width: 1024px){
- .visual_box em { font-size: 7rem; } 
+ .visual_box span { font-size: 7rem; } 
  .tab_pannel li { width: calc(50% - 1.3rem); } 
  }
 @media (max-width: 768px){
- .visual { height: 50rem; } 
- .visual_box p { font-size: 2.5rem; } 
- .visual_box em { font-size: 5rem; } 
+ .visual { height: 40rem; } 
+ .visual_box em { font-size: 2.5rem; } 
+ .visual_box span { font-size: 5rem; } 
  .visual_box img { display: none; } 
  .visual_back .v_01 { display: none; } 
 
- .aboutme { padding-top: 10rem; }
+ .aboutme { padding-top: 10rem; } 
  .profile_top { display: block; } 
  .profile_top > div:last-child { padding-left: 0; } 
- .portfolio { margin-top: 10rem; }
+ .portfolio { margin-top: 10rem; } 
  .portfolio h2,
  .aboutme h2 { font-size: 6rem; padding-bottom: 0; } 
- .info_box > ul strong { width: 100%; }
+ .info_box > ul strong { width: 100%; } 
 
  footer .con_box { display: block; } 
  footer img { width: 5rem; margin-bottom: 1.6rem; } 
@@ -225,8 +229,12 @@ footer .top { width: 5rem; height: 5rem; background: url(../images/top.png) no-r
  footer .top { position: absolute; top: calc(50% - 2.5rem); right: 3rem; } 
  }
 @media (max-width: 460px){
+ .visual_box em { font-size: 2rem; } 
+ .visual_box span { font-size: 4rem; } 
+ .visual_box p { font-size: 1.5rem; } 
  .visual_back .v_02 { display: none; } 
  .visual_back .v_03 { left: 0; } 
- .tab_pannel { gap: 0; }
- .tab_pannel li { width: 100%; }
+ .visual_back i { width: 2.5rem; height: 2.5rem; } 
+ .tab_pannel { gap: 0; } 
+ .tab_pannel li { width: 100%; } 
  }
