@@ -1,17 +1,23 @@
 $(document).ready(function () {
-  // 퀵바
-  function top() {
-    $(".top").on("click", function () {
-      $("html").animate(
-        {
-          scrollTop: 0,
-        },
-        500,
-      );
-    });
-  }
-  top();
+  topScroll();
+  scrollAni();
+  tab();
+});
 
+// 퀵바
+function topScroll() {
+  $(".top").on("click", function () {
+    $("html").animate(
+      {
+        scrollTop: 0,
+      },
+      500,
+    );
+  });
+}
+
+// 스크롤 애니메이션
+function scrollAni() {
   $(window).on("scroll", function () {
     let scr = $(this).scrollTop();
     let box1 = $("#aboutme_scr");
@@ -28,33 +34,35 @@ $(document).ready(function () {
       box2.addClass("back_color");
     }
   });
+}
 
-  $(".faq_btn button").on("click", function () {
-    var $tap = $(this).index();
-    $(this).addClass("active").siblings().removeClass("active");
-    $(".faq_list").removeClass("active");
-    var contents = $(".faq_list");
-    $(contents[$tap]).addClass("active");
-    if ($(this).index() === 0) {
-      // 학교사업탭 활성화
-      $("#schoolPageArea").show();
-      $("#teuniPageArea").hide();
-      $("#activeTabValue").val("S");
-    } else {
-      // 트니사업탭 활성화
-      $("#schoolPageArea").hide();
-      $("#teuniPageArea").show();
-      $("#activeTabValue").val("T");
-    }
+// 포트폴리오 탭
+function tab() {
+  let content = $(".content");
+  
+  $(".tab_menu li").on("click",function(){
+    let customType = $(this).data("filter");
+    content.hide();
+    $(".tab_list li").removeClass("active");
+      content.filter(function(){
+      return $(this).data("type") === customType;
+    })
+    .show();
+    $(this).addClass("active");
   });
-});
 
+  $(".tab_menu li.all").on("click",function() {
+    content.show();
+  })
+}
+
+// 헤더 섹션 이동 이벤트
 document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll('a[href^="#"]');
 
   for (let i = 0; i < links.length; i++) {
     links[i].addEventListener("click", function (e) {
-      e.preventDefault(); // 기본 동작(페이지 이동)을 막음
+      e.preventDefault();
 
       const targetId = this.getAttribute("href").substring(1);
       const targetElement = document.getElementById(targetId);
@@ -62,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (targetElement) {
         window.scrollTo({
           top: targetElement.offsetTop,
-          behavior: "smooth", // 부드럽게 스크롤되도록 함
+          behavior: "smooth",
         });
       }
     });

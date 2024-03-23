@@ -134,28 +134,28 @@
         <span></span>
 
         <ul class="tab_menu con_box">
-          <li>
+          <li class="all">
             <button>ALL</button>
           </li>
-          <li>
-            <button>반응형</button>
+          <li data-filter="responsive">
+            <button>Responsive</button>
           </li>
-          <li>
-            <button>react</button>
+          <li data-filter="react">
+            <button>React</button>
           </li>
-          <li>
-            <button>PC</button>
+          <li data-filter="web">
+            <button>Web</button>
           </li>
-          <li>
-            <button>MOBILE</button>
+          <li data-filter="mobile">
+            <button>Mobile</button>
           </li>
         </ul>
 
-        <!-- 반응형 -->
         <ul class="tab_pannel con_box">
-          <li>
+          <!-- responsive -->
+          <li class="content" data-type="responsive">
             <a href="#" target="_blank">
-              <span class="tag">반응형</span>
+              <span class="tag">Responsive</span>
               <div class="img_box">
                 <img src="assets/images/mock_01.png" alt="">
               </div>
@@ -171,9 +171,9 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="content" data-type="responsive">
             <a href="https://www.dk-educamp.co.kr/" target="_blank">
-              <span class="tag">반응형</span>
+              <span class="tag">Responsive</span>
               <div class="img_box">
                 <img src="assets/images/mock_01.png" alt="">
               </div>
@@ -188,9 +188,9 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="content" data-type="responsive">
             <a href="https://www.intellivix.com/main" target="_blank">
-              <span class="tag">반응형</span>
+              <span class="tag">Responsive</span>
               <div class="img_box">
                 <img src="assets/images/mock_01.png" alt="">
               </div>
@@ -205,14 +205,12 @@
               </div>
             </a>
           </li>
-        </ul>
-        <!-- // 반응형 -->
+          <!-- // responsive -->
 
-        <!-- react -->
-        <ul class="tab_pannel con_box">
-          <li>
+          <!-- react -->
+          <li class="content" data-type="react">
             <a href="http://seb45-main-020.s3-website.ap-northeast-2.amazonaws.com/" target="_blank">
-              <span class="tag">react</span>
+              <span class="tag">React</span>
               <div class="img_box">
                 <img src="assets/images/mock_01.png" alt="">
               </div>
@@ -232,14 +230,12 @@
               </div>
             </a>
           </li>
-        </ul>
-        <!-- // react -->
+          <!-- // react -->
 
-        <!-- pc -->
-        <ul class="tab_pannel con_box">
-          <li>
+          <!-- web -->
+          <li class="content" data-type="web">
             <a href="#" target="_blank">
-              <span class="tag">pc</span>
+              <span class="tag">Web</span>
               <div class="img_box">
                 <img src="assets/images/mock_01.png" alt="">
               </div>
@@ -257,9 +253,9 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="content" data-type="web">
             <a href="#" target="_blank">
-              <span class="tag">pc</span>
+              <span class="tag">Web</span>
               <div class="img_box">
                 <img src="assets/images/mock_01.png" alt="">
               </div>
@@ -274,14 +270,12 @@
               </div>
             </a>
           </li>
-        </ul>
-        <!-- // pc -->
+          <!-- // web -->
 
-        <!-- mobile -->
-        <ul class="tab_pannel con_box">
-          <li>
+          <!-- mobile -->
+          <li class="content" data-type="mobile">
             <a href="#" target="_blank">
-              <span class="tag">mobile</span>
+              <span class="tag">Mobile</span>
               <div class="img_box">
                 <img src="assets/images/mock_01.png" alt="">
               </div>
@@ -293,9 +287,8 @@
               </div>
             </a>
           </li>
+          <!-- // mobile -->
         </ul>
-        <!-- // mobile -->
-
 
       </section>
     </main>
