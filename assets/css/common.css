@@ -95,7 +95,7 @@ main { padding-top: 8rem; }
 .con_box { max-width: 120rem; margin: 0 auto; padding: 0 3rem; } 
 
 /* header */
-header { position: fixed; left: 0; right: 0; height: 8rem; padding: 0 10%; background: #fff; border-bottom: 1px solid #eee; box-sizing: border-box; z-index: 100; } 
+header { position: fixed; left: 0; right: 0; height: 8rem; background: #fff; border-bottom: 1px solid #eee; box-sizing: border-box; z-index: 100; } 
 header .con_box { display: flex; align-items: center; justify-content: space-between; height: 100%; } 
 header .logo { display: block; width: 7rem; height: 4.8rem; background: url(../images/logo.png) no-repeat center / contain; } 
 header ul { display: flex; } 
@@ -153,7 +153,7 @@ header ul li a:hover { background: url(../images/hover.png) no-repeat center; co
 
 .info_box h3 { margin: 5rem 0 1.5rem; padding-bottom: 1rem; font-size: 2.5rem; color: #000; border-bottom: 1px solid #ccc; } 
 .info_box li { padding-bottom: 1.5rem; line-height: 2.8rem; } 
-.info_box li.under { border-bottom: 1px solid #e7e7e7; margin-bottom: 1.5rem; }
+.info_box li.under { border-bottom: 1px solid #e7e7e7; margin-bottom: 1.5rem; } 
 .info_box strong { display: inline-block; width: 26rem; color: #727272; } 
 .info_box p { font-size: 1.2rem; columns: #727272; } 
 .profile_top { display: flex; justify-content: center; align-items: flex-start; } 
@@ -169,20 +169,21 @@ header ul li a:hover { background: url(../images/hover.png) no-repeat center; co
 
 /* portfolio */
 .portfolio { position: relative; padding: 10rem 0; margin-top: 20rem; } 
-.portfolio.back_color > span { left: 0; border-radius: 0; width: 100%; height: 100%; transition: all 0.7s; } 
-.portfolio > span { display: block; position: absolute; top: 0; left: 33%; width: 195px; height: 195px; background: rgba(162, 217, 231, 0.2); border-radius: 100%; z-index: -1; } 
+.portfolio.back_color .circle { left: 0; border-radius: 0; width: 100%; height: 100%; transition: all 0.7s; } 
+.portfolio .circle { display: block; position: absolute; top: 0; left: 33%; width: 19.5rem; height: 19.5rem; background: rgba(162, 217, 231, 0.2); border-radius: 100%; z-index: -1; } 
+.portfolio .info_txt { line-height: 3.2rem; text-align: center; margin-top: -3rem;}
 
 .tab_menu { display: flex; justify-content: center; align-items: center; padding: 5rem 0; flex-wrap: wrap; } 
 .tab_menu li ~ li { margin-left: 1.2rem; } 
 .tab_menu button { padding: 0.5rem 1.2rem; font-size: 2rem; background-color: rgba(162, 217, 231, 0.7); border: 1px solid #fff; border-radius: 0.4rem; font-weight: 300; margin-bottom: 1.2rem; } 
 .tab_menu li:hover button,
-.tab_menu li.active button { background-color: #fff; color: #a2d9e7; transition: 0.3s; }
+.tab_menu li.active button { background-color: #fff; color: #a2d9e7; transition: 0.3s; } 
 
 .tab_pannel { display: flex; align-items: stretch; gap: 2.4rem; flex-wrap: wrap; } 
 .tab_pannel li { position: relative; width: calc(100% / 3 - 1.6rem); background-color: #fff; border-radius: 0.4rem; margin-bottom: 3rem; border: 1px solid transparent; transition: all 0.4s; } 
 .tab_pannel li:hover { border-color: #a2d9e7; } 
 .tab_pannel li .tag { position: absolute; right: 1rem; top: 1rem; background-color: #ffc845; color: #fff; font-size: 1.2rem; padding: 0.4rem 0.8rem; border-radius: 0.4rem; font-weight: 200; } 
-.tab_pannel li .img_box { padding: 3rem 5rem; } 
+.tab_pannel li .img_box { padding: 3rem; } 
 .tab_pannel li img { display: block; max-width: 100%; } 
 
 .tab_pannel .txt_box { padding: 2rem 3rem; border-top: 1px solid #eee; } 
@@ -218,9 +219,10 @@ footer .top { width: 5rem; height: 5rem; background: url(../images/top.png) no-r
  .aboutme { padding-top: 10rem; } 
  .profile_top { display: block; } 
  .profile_top > div:last-child { padding-left: 0; } 
- .portfolio { margin-top: 10rem; } 
+ .portfolio { margin-top: 10rem; padding: 10rem 3rem; } 
  .portfolio h2,
  .aboutme h2 { font-size: 6rem; padding-bottom: 0; } 
+ .portfolio .info_txt { margin-top: 0; }
  .info_box > ul strong { width: 100%; } 
 
  footer .con_box { display: block; } 
@@ -228,7 +230,9 @@ footer .top { width: 5rem; height: 5rem; background: url(../images/top.png) no-r
  .foo_info span { display: block; margin-left: 0; } 
  footer .top { position: absolute; top: calc(50% - 2.5rem); right: 3rem; } 
  }
-@media (max-width: 460px){
+@media (max-width: 460px) { 
+ header .con_box { justify-content: center; }
+ header .logo { display: none; } 
  .visual_box em { font-size: 2rem; } 
  .visual_box span { font-size: 4rem; } 
  .visual_box p { font-size: 1.5rem; } 
