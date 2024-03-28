@@ -192,6 +192,12 @@ header ul li a:hover { background: url(../images/hover.png) no-repeat center; co
 .tab_pannel .txt_box p { line-height: 2.6rem; padding: 2rem 0 5rem; } 
 .tab_pannel .txt_box i { position: absolute; right: 3rem; bottom: 2rem; background: url(../images/ico_go.png) no-repeat right 0 bottom 0 / contain; font-size: 2rem; color: #878787; font-style: normal; padding-left: 2rem; } 
 
+.other_title { font-size: 3rem; padding-bottom: 1rem; margin-top: 3rem; border-bottom: 1px solid #ccc; }
+.other_list { display: flex; flex-wrap: wrap; padding-top: 2rem; gap: 2.4rem; }
+.other_list li { padding-bottom: 3rem; width: calc(100% / 3 - 1.6rem); }
+.other_list strong { display: block; font-size: 2rem; font-weight: 500; }
+.other_list span { font-size: 1.2rem; }
+.other_list p { line-height: 2.6rem; font-size: 1.6rem; }
 
 /* footer */
 footer { position: relative; background: #878787; padding: 5rem 0; } 
@@ -207,6 +213,7 @@ footer .top { width: 5rem; height: 5rem; background: url(../images/top.png) no-r
 
 @media (max-width: 1024px){
  .visual_box span { font-size: 7rem; } 
+ .other_list li,
  .tab_pannel li { width: calc(50% - 1.3rem); } 
  }
 @media (max-width: 768px){
@@ -239,6 +246,8 @@ footer .top { width: 5rem; height: 5rem; background: url(../images/top.png) no-r
  .visual_back .v_02 { display: none; } 
  .visual_back .v_03 { left: 0; } 
  .visual_back i { width: 2.5rem; height: 2.5rem; } 
+ .other_list,
  .tab_pannel { gap: 0; } 
+ .other_list li,
  .tab_pannel li { width: 100%; } 
  }

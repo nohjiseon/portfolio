@@ -135,163 +135,311 @@
         <p class="info_txt">FileList는 link 클릭 시 해당 페이지로 이동되며, 주요 페이지들은 다른 색으로 표시되어 있습니다!</p>
         <span class="circle"></span>
 
-        <ul class="tab_menu con_box">
-          <li class="all">
-            <button>ALL</button>
-          </li>
-          <li data-filter="responsive">
-            <button>Responsive</button>
-          </li>
-          <li data-filter="react">
-            <button>React</button>
-          </li>
-          <li data-filter="web">
-            <button>Web</button>
-          </li>
-          <li data-filter="mobile">
-            <button>Mobile</button>
-          </li>
-        </ul>
+        <div class="con_box">
+          <ul class="tab_menu">
+            <li class="all">
+              <button>ALL</button>
+            </li>
+            <li data-filter="responsive">
+              <button>Responsive</button>
+            </li>
+            <li data-filter="react">
+              <button>React</button>
+            </li>
+            <li data-filter="web">
+              <button>Web</button>
+            </li>
+            <li data-filter="mobile">
+              <button>Mobile</button>
+            </li>
+          </ul>
+  
+          <ul class="tab_pannel">
+            <li class="content" data-type="responsive">
+              <a href="#" target="_blank">
+                <span class="tag">Responsive</span>
+                <div class="img_box">
+                  <img src="assets/images/mock_01.png" alt="">
+                </div>
+                <div class="txt_box">
+                  <strong>캠페인 매니저</strong>
+                  <span>2022.08.15 - 2022.09.16</span>
+                  <p>
+                    광고 데이터 통합 관리 솔루션<br/>
+                    - bootstrap(vuexy) 활용<br/>
+                    - highcharts
+                  </p>
+                  <i>FileList 바로가기</i>
+                </div>
+              </a>
+            </li>
+            <li class="content" data-type="responsive">
+              <a href="https://www.dk-educamp.co.kr/" target="_blank">
+                <span class="tag">Responsive</span>
+                <div class="img_box">
+                  <img src="assets/images/mock_02.png" alt="">
+                </div>
+                <div class="txt_box">
+                  <strong>대교 에듀캠프</strong>
+                  <span>2022.04.25 - 2022.06.03</span>
+                  <p>
+                    회사 소개 사이트<br/>
+                    - swiper
+                  </p>
+                  <i>바로가기</i>
+                </div>
+              </a>
+            </li>
+            <li class="content" data-type="react">
+              <a href="http://seb45-main-020.s3-website.ap-northeast-2.amazonaws.com/" target="_blank">
+                <span class="tag">React (Web)</span>
+                <div class="img_box">
+                  <img src="assets/images/mock_1_01.png" alt="">
+                </div>
+                <div class="txt_box">
+                  <strong>패스파인더</strong>
+                  <span>
+                    2022.8.25 - 2022.9.19<br/>
+                    부트캠프 메인 프로젝트 / 프론트 3인, 백엔드 3인
+                  </span>
+                  <p>
+                    우리나라 여행후기 커뮤니티<br/>
+                    - tour api, openWeather api 활용<br/>
+                    - 이미지맵
+                  </p>
+                  <i>바로가기</i>
+                </div>
+              </a>
+            </li>
+            <li class="content" data-type="responsive">
+              <a href="#" target="_blank">
+                <span class="tag">Responsive</span>
+                <div class="img_box">
+                  <img src="assets/images/mock_04.png" alt="">
+                </div>
+                <div class="txt_box">
+                  <strong>wheet 화상회의</strong>
+                  <span>2020.12.28 - 2021.02.08</span>
+                  <p>
+                    화상회의 솔루션<br/>
+                    - core(화상회의 화면) 반응형 고도화 적용
+                  </p>
+                  <i>FileList 바로가기</i>
+                </div>
+              </a>
+            </li>
+            <li class="content" data-type="web">
+              <a href="#" target="_blank">
+                <span class="tag">Web</span>
+                <div class="img_box">
+                  <img src="assets/images/mock_1_02.png" alt="">
+                </div>
+                <div class="txt_box">
+                  <strong>FTA 통합 플랫폼</strong>
+                  <span>2020.07.20 - 2020.10.28</span>
+                  <p>
+                    - 웹접근성<br/> 
+                    <span>(웹접근성 준수, 로그인 페이지 수정불가 이슈로 획득 불가)</span><br/> 
+                    - 고도화
+                  </p>
+                  <i>FileList 바로가기</i>
+                </div>
+              </a>
+            </li>
+            <li class="content" data-type="mobile">
+              <a href="#" target="_blank">
+                <span class="tag">Mobile</span>
+                <div class="img_box">
+                  <img src="assets/images/mock_2_01.png" alt="">
+                </div>
+                <div class="txt_box">
+                  <strong>sunshine kwangyang</strong>
+                  <span>2022.06.20 - 2022.07.20</span>
+                  <p>광양시 19개 지역아동센터 초등학생 대상 학습 콘텐츠 및 멘토링 서비스 제공</p>
+                  <i>FileList 바로가기</i>
+                </div>
+              </a>
+            </li>
+  
+            <!-- responsive -->
+            <li class="content" data-type="responsive">
+              <a href="https://www.intellivix.com/main" target="_blank">
+                <span class="tag">Responsive</span>
+                <div class="img_box">
+                  <img src="assets/images/mock_03.png" alt="">
+                </div>
+                <div class="txt_box">
+                  <strong>인텔리빅스</strong>
+                  <span>2021.12.14 - 2022.01.25</span>
+                  <p>
+                    회사 소개 사이트<br/>
+                    - fullpage
+                  </p>
+                  <i>바로가기</i>
+                </div>
+              </a>
+            </li>
+            <li class="content" data-type="responsive">
+              <a href="http://media.cudo.co.kr/index" target="_blank">
+                <span class="tag">Responsive</span>
+                <div class="img_box">
+                  <img src="assets/images/mock_05.png" alt="">
+                </div>
+                <div class="txt_box">
+                  <strong>더미디어 사업부 사용자</strong>
+                  <span>2021.05.03 - 2021.05.07</span>
+                  <p>
+                    CUDO 더미디어 사업부 회사 소개사이트
+                  </p>
+                  <i>바로가기</i>
+                </div>
+              </a>
+            </li>
+            <!-- // responsive -->
+  
+            <!-- web -->
+            <li class="content" data-type="web">
+              <a href="#" target="_blank">
+                <span class="tag">Web</span>
+                <div class="img_box">
+                  <img src="assets/images/mock_1_03.png" alt="">
+                </div>
+                <div class="txt_box">
+                  <strong>컴포즈캠프</strong>
+                  <span>2022.10.10 - 2022.10.14</span>
+                  <p>
+                    온라인 개발 캠프 사이트 홈 화면<br/>
+                    - imagemap을 이용한 태블릿부터 PC까지 반응형 사이트
+                  </p>
+                  <i>바로가기</i>
+                </div>
+              </a>
+            </li>
+            <li class="content" data-type="web">
+              <a href="#" target="_blank">
+                <span class="tag">Web</span>
+                <div class="img_box">
+                  <img src="assets/images/mock_1_04.png" alt="">
+                </div>
+                <div class="txt_box">
+                  <strong>wheet 화상회의 사용자</strong>
+                  <span>2020.12.28 - 2021.02.08</span>
+                  <p>
+                    화상회의 솔루션<br/>
+                    - 사용자 화면 (태블릿 세로까지 적용)
+                  </p>
+                  <i>FileList 바로가기</i>
+                </div>
+              </a>
+            </li>
+            <li class="content" data-type="web">
+              <a href="#" target="_blank">
+                <span class="tag">Web</span>
+                <div class="img_box">
+                  <img src="assets/images/mock_1_05.png" alt="">
+                </div>
+                <div class="txt_box">
+                  <strong>LGU+ AR 원격지원 관리자</strong>
+                  <span>2021.04.01 - 2021.04.16</span>
+                  <p>
+                    AR 원격지원 관리자
+                  </p>
+                  <i>FileList 바로가기</i>
+                </div>
+              </a>
+            </li>
+            <!-- // web -->
+  
+            <!-- mobile -->
+            <li class="content" data-type="mobile">
+              <a href="#" target="_blank">
+                <span class="tag">Mobile</span>
+                <div class="img_box">
+                  <img src="assets/images/mock_2_02.png" alt="">
+                </div>
+                <div class="txt_box">
+                  <strong>랜선에듀 school 모바일</strong>
+                  <span>2021.02.01 - 2021.03.05</span>
+                  <p>
+                    kt alpha 모바일 학교 수업 솔루션
+                  </p>
+                  <i>FileList 바로가기</i>
+                </div>
+              </a>
+            </li>
+            <li class="content" data-type="mobile">
+              <a href="http://kolonmotors.kr/users/nakyung_yoo" target="_blank">
+                <span class="tag">Mobile</span>
+                <div class="img_box">
+                  <img src="assets/images/mock_2_03.png" alt="">
+                </div>
+                <div class="txt_box">
+                  <strong>코오롱 모터스 모바일 명함</strong>
+                  <span>2021.04.15 - 2021.04.16</span>
+                  <p>
+                    모바일 명함
+                  </p>
+                  <i>바로가기</i>
+                </div>
+              </a>
+            </li>
+            <!-- // mobile -->
+          </ul>
 
-        <ul class="tab_pannel con_box">
-          <!-- responsive -->
-          <li class="content" data-type="responsive">
-            <a href="#" target="_blank">
-              <span class="tag">Responsive</span>
-              <div class="img_box">
-                <img src="assets/images/mock_01.png" alt="">
-              </div>
-              <div class="txt_box">
-                <strong>캠페인 매니저</strong>
-                <span>2022.08.15 - 2022.09.16</span>
-                <p>
-                  광고 데이터 통합 관리 솔루션<br/>
-                  - bootstrap(vuexy) 활용<br/>
-                  - highcharts
-                </p>
-                <i>FileList 바로가기</i>
-              </div>
-            </a>
-          </li>
-          <li class="content" data-type="responsive">
-            <a href="https://www.dk-educamp.co.kr/" target="_blank">
-              <span class="tag">Responsive</span>
-              <div class="img_box">
-                <img src="assets/images/mock_02.png" alt="">
-              </div>
-              <div class="txt_box">
-                <strong>대교 에듀캠프</strong>
-                <span>2022.04.25 - 2022.06.03</span>
-                <p>
-                  회사 소개 사이트<br/>
-                  - swiper
-                </p>
-                <i>바로가기</i>
-              </div>
-            </a>
-          </li>
-          <li class="content" data-type="responsive">
-            <a href="https://www.intellivix.com/main" target="_blank">
-              <span class="tag">Responsive</span>
-              <div class="img_box">
-                <img src="assets/images/mock_03.png" alt="">
-              </div>
-              <div class="txt_box">
-                <strong>인텔리빅스</strong>
-                <span>2021.12.14 - 2022.01.25</span>
-                <p>
-                  회사 소개 사이트<br/>
-                  - fullpage
-                </p>
-                <i>바로가기</i>
-              </div>
-            </a>
-          </li>
-          <li class="content" data-type="responsive">
-            <a href="#" target="_blank">
-              <span class="tag">Responsive</span>
-              <div class="img_box">
-                <img src="assets/images/mock_04.png" alt="">
-              </div>
-              <div class="txt_box">
-                <strong>wheet 화상회의 사용자</strong>
-                <span>2020.12.28 - 2021.02.08</span>
-                <p>
-                  화상회의 솔루션<br/>
-                  - core(화상회의 화면) 반응형 고도화 적용
-                </p>
-                <i>바로가기</i>
-              </div>
-            </a>
-          </li>
-          <!-- // responsive -->
-
-          <!-- react -->
-          <li class="content" data-type="react">
-            <a href="http://seb45-main-020.s3-website.ap-northeast-2.amazonaws.com/" target="_blank">
-              <span class="tag">React (Web)</span>
-              <div class="img_box">
-                <img src="assets/images/mock_1_01.png" alt="">
-              </div>
-              <div class="txt_box">
-                <strong>패스파인더</strong>
-                <span>
-                  2022.8.25 - 2022.9.19<br/>
-                  부트캠프 메인 프로젝트 / 프론트 3인, 백엔드 3인
-                </span>
-                <p>
-                  우리나라 여행후기 커뮤니티<br/>
-                  - 디자인 & css 전반적인 수정<br/>
-                  - tour api, 등록된 데이터 추천 리스트<br/>
-                  - openWeather api를 활용한 지역별 날씨 & 이미지맵<br/>
-                  - 태블릿까지 지원
-                </p>
-                <i>바로가기</i>
-              </div>
-            </a>
-          </li>
-          <!-- // react -->
-
-          <!-- web -->
-          <li class="content" data-type="web">
-            <a href="#" target="_blank">
-              <span class="tag">Web</span>
-              <div class="img_box">
-                <img src="assets/images/mock_1_02.png" alt="">
-              </div>
-              <div class="txt_box">
-                <strong>FTA 통합 플랫폼</strong>
-                <span>
-                  2020.07.20 - 2020.10.28 &<br/>
-                  2021.09.13 - 2021.11.10
-                </span>
-                <p>
-                  - 웹접근성 (사용자 모든 화면 웹접근성에 준수하였으나, 로그인 페이지 수정불가 이슈로 획득은 하지 못하였음)<br/>
-                  - 고도화
-                </p>
-                <i>바로가기</i>
-              </div>
-            </a>
-          </li>
-          <!-- // web -->
-
-          <!-- mobile -->
-          <li class="content" data-type="mobile">
-            <a href="#" target="_blank">
-              <span class="tag">Mobile</span>
-              <div class="img_box">
-                <img src="assets/images/mock_2_01.png" alt="">
-              </div>
-              <div class="txt_box">
-                <strong>sunshine kwangyang</strong>
-                <span>2022.06.20 - 2022.07.20</span>
-                <p>광양시 19개 지역아동센터 초등학생 대상 학습 콘텐츠 및 멘토링 서비스 제공</p>
-                <i>바로가기</i>
-              </div>
-            </a>
-          </li>
-          <!-- // mobile -->
-        </ul>
+          <h3 class="other_title">더 많은 이력사항</h3>
+          <ul class="other_list">
+            <li class="content" data-type="mobile">
+              <strong>티딜 고도화</strong>
+              <span>2022.11.1 - 2022.12.30</span>
+              <p>SK텔레콤 고객을 위한 쇼핑몰</p>
+            </li>
+            <li class="content" data-type="web">
+              <strong>어썸관리자</strong>
+              <span>2022.07.11 - 2022.12</span>
+              <p>SKT 광고 플랫폼 관리자</p>
+            </li>
+            <li class="content" data-type="mobile">
+              <strong>싸이월드 고도화</strong>
+              <span>2022.05.23 - 2022.12.30</span>
+              <p>소셜 네트워크</p>
+            </li>
+            <li class="content" data-type="web">
+              <strong>FTA 통합 플랫폼 관리자</strong>
+              <span>2020.07.20 - 2020.10.28</span>
+              <p>FTA 통합 플랫폼</p>
+            </li>
+            <li class="content" data-type="web">
+              <strong>DX플랫폼 관리자</strong>
+              <span>2021.05.17 - 2021.06.10</span>
+              <p>다양한 지역 서비스 이용 앱 관리자</p>
+            </li>
+            <li class="content" data-type="web">
+              <strong>랜선에듀 school 관리자</strong>
+              <span>2021.02.01 - 2021.03.05</span>
+              <p>kt alpha 모바일 학교 수업 솔루션</p>
+            </li>
+            <li class="content" data-type="responsive">
+              <strong>Covid-19 Drug Test</strong>
+              <span>2020.07.20 - 2020.08.03</span>
+              <p>Covid-19 임상실험 신청 사이트</p>
+            </li> 
+            <li class="content" data-type="web">
+              <strong>LGU+ BI 대시보드</strong>
+              <span>2020.07.06 - 2020.07.20</span>
+              <p>LGU+ 고객분석 대시보드</p>
+            </li>
+            <li class="content" data-type="responsive">
+              <strong>adwon 회사 소개 사이트</strong>
+              <span>2020.06.30 - 2020.07.06</span>
+              <p>adwon 회사 소개 사이트</p>
+            </li>
+            <li class="content" data-type="web">
+              <strong>천년동안</strong>
+              <span>2019.04.27 - 2019.05.31</span>
+              <p>해양심층수 천년동안 판매 쇼핑몰</p>
+            </li>
+          </ul>
+        </div>
 
       </section>
     </main>
